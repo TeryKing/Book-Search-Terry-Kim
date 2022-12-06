@@ -1,12 +1,13 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "This Book Search Application created by Terry Kim using REACT.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,13 @@
     "graphql": "^16.6.0",
     "mongodb": "^4.12.1",
     "mongoose": "^6.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeryKing/Book-Search-Terry-Kim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TeryKing/Book-Search-Terry-Kim/issues"
+  },
+  "homepage": "https://github.com/TeryKing/Book-Search-Terry-Kim#readme"
 }
