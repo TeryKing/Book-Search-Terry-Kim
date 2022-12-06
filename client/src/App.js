@@ -10,7 +10,7 @@ const client = new ApolloClient({
   request: opertion =>{
     const token = localStorage.getItem('id_token');
 
-    operation.setContext({
+    opertion.setContext({
       headers:{authorization:token ? `Bearer ${token}` : ''}
     })
   },
