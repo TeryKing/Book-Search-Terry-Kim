@@ -7,7 +7,9 @@
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+
   },
   "keywords": [],
   "author": "",
@@ -25,5 +27,7 @@
     "mongoose": "^6.8.0"
   },
   "engines": {
-    "node": "18.7.0"
+    "npm": "5.6.0",
+    "node": "8.10.0"
+  }
 }
